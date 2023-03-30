@@ -1,0 +1,24 @@
+.pItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.pText {
+    text-align: left;
+    width: 15vw;
+}
+
+.pHeader {
+    font-size: 50px;
+}
+
+.pCaption {
+    font-size: 20px;
+}

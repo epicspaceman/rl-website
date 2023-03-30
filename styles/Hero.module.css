@@ -1,0 +1,36 @@
+.hero {
+    font-family: 'Cantata One', serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.heroItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    height: 95vh;
+    width: 70vw;
+    align-items: center;
+    margin: auto;
+}
+
+.heroText{
+    text-align: left;
+    width: 60vh;
+}
+
+.heroText h1 {
+    font-size: 65px;
+}
+
+.heroText p {
+    font-size: 30px;
+}
+
+.hero img {
+    width: 600px;
+    height: 700px;
+}
