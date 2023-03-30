@@ -50,7 +50,7 @@ export default function Shapes(props: any) {
                 sDiv.appendChild(div);
             }
         }
-    }, [])
+    })
 
   return (
     <div id='shapes'></div>
