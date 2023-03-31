@@ -1,7 +1,6 @@
 .main {
     position: absolute;
     bottom: 0;
-    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,5 +10,5 @@
 }
 
 .main p {
-    margin: 10px;
+    margin: auto;
 }

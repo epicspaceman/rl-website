@@ -14,7 +14,7 @@ export default function Shapes(props: any) {
     }
 
     const randomPosX = () => {
-        return Math.random() * (2000-1) + 1;
+        return Math.random() * (80-1) + 1;
     }
 
     useEffect(() => {
@@ -27,8 +27,8 @@ export default function Shapes(props: any) {
             div.style.opacity = ".7";
             div.style.zIndex = "-1";
             div.style.position = "absolute";
-            div.style.top = `${randomPosY()}px`;
-            div.style.left = `${randomPosX()}px`;
+            div.style.top = `${randomPosY()}%`;
+            div.style.left = `${randomPosX()}%`;
             switch (props.vertexes) {
                 case 3:
                     div.style.clipPath = `polygon(${randomA()}% ${randomA()}%, ${randomA()}% ${randomA()}%, ${randomA()}% ${randomA()}%)`;

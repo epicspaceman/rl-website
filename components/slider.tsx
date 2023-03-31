@@ -35,7 +35,6 @@ export default function Slider(props: any) {
   }
 
   const polygon = `${randomB()}% ${randomB()}%, ${randomA()}% ${randomB()}%, ${randomA()}% ${randomC()}%, ${randomA()}% ${randomA()}%, ${randomB()}% ${randomA()}%, ${randomB()}% ${randomC()}%`;
-  console.log(props.imgArray[currentIndex]);
     
   return (
     <main className={styles.slider} style={{height: '400px', width: '600px', position: 'relative'}}>

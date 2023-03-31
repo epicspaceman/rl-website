@@ -4,15 +4,15 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    padding: 0px 30px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
 }
 
 .pText {
     text-align: left;
-    width: 15vw;
+    width: 25%;
 }
 
 .pHeader {
@@ -22,3 +22,4 @@
 .pCaption {
     font-size: 20px;
 }
+

@@ -3,3 +3,12 @@
     margin: auto;
     font-size: 35px;
 }
+
+.main {
+    position: relative;
+    margin: 0px;
+}
+
+.content {
+    padding-bottom: 7vh;
+}

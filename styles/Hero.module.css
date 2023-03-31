@@ -1,6 +1,5 @@
 .hero {
     font-family: 'Cantata One', serif;
-    height: 100%;
     display: flex;
     align-items: center;
     
@@ -11,15 +10,14 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-    height: 95vh;
-    width: 70vw;
+    width: 70%;
     align-items: center;
     margin: auto;
 }
 
 .heroText{
     text-align: left;
-    width: 60vh;
+    width: 60%;
 }
 
 .heroText h1 {
@@ -31,6 +29,6 @@
 }
 
 .hero img {
-    width: 600px;
-    height: 700px;
+    width: 40%;
+    height: 60%;
 }
