@@ -1,10 +1,5 @@
 import styles from '@/styles/pSection.module.css'
 import Image from 'next/image'
-import d1 from '@/public/desimg1.png'
-import d2 from '@/public/desimg2.png'
-import d3 from '@/public/desimg3.png'
-import d4 from '@/public/desimg4.png'
-import d5 from '@/public/desimg5.png'
 import Shapes from './shapes'
 
 export default function pSection(props: any) {
@@ -37,9 +32,9 @@ export default function pSection(props: any) {
         
         <div className={styles.bgShape} style={{clipPath: `polygon(${polygon})`, backgroundColor: `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`}}></div>
         <div className={styles.items}>  
-            <Image className={styles.img2} src={d2}  alt="Design Work" height={225} width={375}/>
-            <Image className={styles.img1} src={d1} alt="Design Work" height={225} width={425}/>
-            <Image className={styles.img4} src={d4} alt="Design Work" height={225} width={325}/>
+            <Image className={styles.img2} src={props.img1}  alt="Design Work" height={225} width={375}/>
+            <Image className={styles.img1} src={props.img2} alt="Design Work" height={225} width={425}/>
+            <Image className={styles.img4} src={props.img3} alt="Design Work" height={225} width={325}/>
         </div>
       </main>
     </>

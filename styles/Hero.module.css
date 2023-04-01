@@ -2,23 +2,24 @@
     font-family: 'Cantata One', serif;
     display: flex;
     align-items: center;
-    
+    height: 95vh;
 }
 
 .heroItems {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
-    width: 70%;
-    align-items: center;
+    width: 1500px;
     margin: auto;
 }
 
 .heroText{
     text-align: left;
-    width: 60%;
-    height: 70%;
+    width: 800px;
+    height: 350px;
+    align-self: center;
 }
 
 .heroText h1 {
@@ -30,6 +31,6 @@
 }
 
 .hero img {
-    width: 40%;
-    height: 70%;
+    width: 550px;
+    height: 700px;
 }
