@@ -18,6 +18,7 @@
 .heroText{
     text-align: left;
     width: 60%;
+    height: 70%;
 }
 
 .heroText h1 {
@@ -30,5 +31,5 @@
 
 .hero img {
     width: 40%;
-    height: 60%;
+    height: 70%;
 }
