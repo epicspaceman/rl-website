@@ -35,7 +35,7 @@ export default function Home() {
             />
             <Preview
             header="CS Work"
-            caption="Computer Science projects that I've worken on."
+            caption="Computer Science projects that I've worked on."
             imageArray={[c1, c2, c3]}
             vertexes="4"
             />
