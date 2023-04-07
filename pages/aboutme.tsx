@@ -18,7 +18,6 @@ export default function About() {
       <main className={styles.main}>
         <Nav />
         <div className={styles.content}>
-          <Shapes vertexes="5" maxY="60" minY="0"/>
           <div className={styles.header}>
             <h1>About Me</h1>
             <h5><a href='https://www.bulbapp.com/u/about-me~75392' target='_blank' style={{textDecoration: 'none'}}>Bulb</a></h5>
@@ -31,7 +30,7 @@ export default function About() {
               Some hobbies of mine include gaming with friends, programming, and biking.
               </p>
               <div className={styles.image}>
-                <Image src={Me} alt="picture of me" height={300} width={200} style={{borderRadius: '3px'}}/>
+                <Image src={Me} alt="picture of me" height={300} width={200} />
               </div>
               <p>
               As a student at Akins, I am a part of the New Tech Academy, where students learn about today&apos;s newest technology and how to use it. 
@@ -46,7 +45,7 @@ export default function About() {
               </p>
               <div className={styles.slider}>
                 <Slider imgArray={[s1, s2]} />
-                <Shapes vertexes="5" maxY="75" minY="60"/>
+                <Shapes vertexes="5" maxY="1300" minY="10"/>
               </div>
               <p>
               I value freedom of creativity, constructive criticism, and good leadership. 

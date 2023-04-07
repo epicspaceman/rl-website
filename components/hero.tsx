@@ -8,7 +8,7 @@ export default function Hero({}) {
     return (
       <>
         <main className={styles.hero}>
-            <Shapes vertexes="5" maxY="50" minY="1" />
+            <Shapes vertexes="5" maxY="1000" minY="1" />
                 <div className={styles.heroItems}>
                     <div className={styles.heroText}>
                         <h1>Hi, I&apos;m Robert Lockay.<br/>Designer, Coder, Student.</h1>

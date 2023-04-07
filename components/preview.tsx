@@ -6,7 +6,7 @@ export default function Footer(props: any) {
     return (
       <>
         <main className={styles.preview}>
-            <Shapes vertexes={props.vertexes} maxY="75" minY="10"/>
+            <Shapes vertexes={props.vertexes} maxY="2200" minY="1000"/>
                 <div className={styles.pItems}>
                     <div className={styles.pText}>
                         <h1 className={styles.pHeader}>{props.header}</h1>

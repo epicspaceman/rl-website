@@ -24,7 +24,7 @@ export default function pSection(props: any) {
   return (
     <>
       <main className={styles.main}>
-        <Shapes vertexes="5" maxY="60" minY="0"/>
+        <Shapes vertexes="1000" maxY="1500" minY="0"/>
         <div className={styles.text}>
           <h1>{props.title}</h1>
           <h5>{props.subcaption}</h5>
