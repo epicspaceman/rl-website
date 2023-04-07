@@ -14,7 +14,7 @@ export default function Shapes(props: any) {
     }
 
     const randomPosX = () => {
-        return Math.random() * (70-1) + 1;
+        return Math.random() * (65-1) + 1;
     }
 
     useEffect(() => {
