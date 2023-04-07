@@ -30,7 +30,6 @@ export default function pSection(props: any) {
           <h5>{props.subcaption}</h5>
         </div>
         
-        <div className={styles.bgShape} style={{clipPath: `polygon(${polygon})`, backgroundColor: `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`}}></div>
         <div className={styles.items}>  
             <Image className={styles.img2} src={props.img1}  alt="Design Work" height={225} width={375}/>
             <Image className={styles.img1} src={props.img2} alt="Design Work" height={225} width={425}/>

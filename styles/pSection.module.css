@@ -15,13 +15,6 @@
     z-index: 1;
 }
 
-.bgShape {
-    position: absolute;
-    width: 700px;
-    height: 800px;
-    left: 55vw;
-}
-
 .items {
     height: 600px;
     width: 700px;
