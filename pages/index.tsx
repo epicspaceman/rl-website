@@ -6,11 +6,13 @@ import Hero from '@/components/hero'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 import Preview from '@/components/preview'
-import w_img from '@/public/woopersk8.jpg';
-import n_img from '@/public/notfunny.png';
 import desimg1 from '@/public/desimg1.png';
 import desimg2 from '@/public/desimg2.png';
 import desimg5 from '@/public/desimg5.png';
+import c1 from '@/public/websiteprev1.png'
+import c2 from '@/public/bdeathgame.png'
+import c3 from '@/public/calcproj.png'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -34,7 +36,7 @@ export default function Home() {
             <Preview
             header="CS Work"
             caption="Computer Science projects that I've worken on."
-            imageArray={[w_img, n_img, w_img]}
+            imageArray={[c1, c2, c3]}
             vertexes="4"
             />
         </div>
