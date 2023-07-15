@@ -1,0 +1,27 @@
+.main {
+    position: relative;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7vh;
+}
+
+.img {
+    background-color: rgb(15,31,56);
+    padding: 50px;
+}
+
+.para {
+    text-align: justify;
+    width: 1700px;
+    background-color: rgb(247,131,121);
+    padding: 50px;
+    font-family: 'Livvic', 'sans-serif';
+    font-size: 20px;
+}
+
