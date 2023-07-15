@@ -1,7 +1,7 @@
-import styles from '@/styles/preview.module.css'
 import Image, { StaticImageData } from 'next/image'
 import {motion} from 'framer-motion'
 import Link from 'next/link'
+import styles from '@/styles/preview.module.css'
 
 interface Props {
   title: string;
