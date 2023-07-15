@@ -1,25 +1,39 @@
-.pItems {
+.preview {
+    margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
     justify-content: space-around;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 150px;
+    align-items: center;
+    background-color: rgb(247,131,121);
+    width: 1800px;
+    height: 800px;
 }
 
-.pText {
-    text-align: left;
-    width: 25%;
+.previewHeader {
+    font-family: 'Poppins', 'sans-serif';
+    color: rgb(15,31,56);
+    font-size: 60px;
+    margin: 0;
 }
 
-.pHeader {
-    font-size: 50px;
+.previewCaption {
+    font-family: 'Livvic', 'sans-serif';
+    color: rgb(15,31,56);
+    font-size: 30px;
+    margin: 0;
 }
 
-.pCaption {
+.previewImg {
+    background-color: rgb(15,31,56);
+    padding: 30px;
+}
+
+.previewBtn {
+    background-color: rgb(15,31,56);
+    color: rgb(247,131,121);
+    border: none;
     font-size: 20px;
+    font-family: 'Poppins', 'sans-serif';
+    padding: 20px;
+    margin-top: 15px;
 }
-

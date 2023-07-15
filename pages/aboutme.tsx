@@ -4,10 +4,9 @@ import styles from '@/styles/Aboutme.module.css'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
 import Me from '@/public/me.jpg'
-import Slider from '@/components/slider'
 import s2 from '@/public/newtechshirtback.png'
 import s1 from '@/public/newtechshirtfront.png'
-import Shapes from '@/components/shapes'
+import {Reveal} from '@/components/reveal'
 
 export default function About() {
   return (
@@ -17,10 +16,10 @@ export default function About() {
       </Head>
       <main className={styles.main}>
         <Nav />
+        <Reveal>
         <div className={styles.content}>
           <div className={styles.header}>
             <h1>About Me</h1>
-            <h5><a href='https://www.bulbapp.com/u/about-me~75392' target='_blank' style={{textDecoration: 'none'}}>Bulb</a></h5>
           </div>
           <div className={styles.about}>
             <div className={styles.para}>
@@ -43,10 +42,6 @@ export default function About() {
               I have also done some design work outside of my Yearbook responsibilities. 
               I have put forward my attempt to design a t-shirt for my academy&apos;s own t-shirt along with some minor help from my friend (Pictured below).
               </p>
-              <div className={styles.slider}>
-                <Slider imgArray={[s1, s2]} />
-                <Shapes vertexes="5" maxY="1300" minY="10"/>
-              </div>
               <p>
               I value freedom of creativity, constructive criticism, and good leadership. 
               I think that the best creative work comes from having freedom to explore ideas and make mistakes. 
@@ -66,9 +61,6 @@ export default function About() {
               Another success to me was being able to work on and complete the mugshots section of the Akins Aerie 2023, and generally the whole yearbook.
               </p>
               <p>
-              You can read more about it <a href='https://www.bulbapp.com/u/akins-aerie-2022-2023-work' target='_blank'>here</a>.
-              </p>
-              <p>
               In the future I want to eventually be able to attend university and get a degree in computer science, graphic design,
                or some other science major. 
                And maybe even earn my own PhD. 
@@ -77,6 +69,7 @@ export default function About() {
             </div>
           </div>
         </div>
+        </Reveal>
         <Footer />
       </main>
     </>

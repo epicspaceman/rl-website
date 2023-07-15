@@ -1,20 +1,26 @@
-import styles from '@/styles/Preview.module.css'
-import Shapes from '@/components/shapes'
-import Slider from '@/components/slider'
+import styles from '@/styles/preview.module.css'
+import Image, { StaticImageData } from 'next/image'
+import {motion} from 'framer-motion'
+import Link from 'next/link'
 
-export default function Footer(props: any) {
+interface Props {
+  title: string;
+  caption: string;
+  img: StaticImageData;
+  imgalt: string;
+  href: string;
+}
+
+export default function Preivew({title, caption, img, imgalt, href}: Props) {
     return (
       <>
         <main className={styles.preview}>
-            <Shapes vertexes={props.vertexes} maxY="1900" minY="1000"/>
-                <div className={styles.pItems}>
-                    <div className={styles.pText}>
-                        <h1 className={styles.pHeader}>{props.header}</h1>
-                        <p className={styles.pCaption}>{props.caption}</p>
-                    </div>
-                    
-                    <Slider imgArray={props.imageArray}/>
-                </div>
+            <div className={styles.previewText}>
+                <h1 className={styles.previewHeader}>{title}</h1>
+                <h3 className={styles.previewCaption}>{caption}</h3>
+                <Link href={href}><motion.button type='button' className={styles.previewBtn} whileHover={{ scale: 1.1}} whileTap={{ scale: .9}}>Explore</motion.button></Link>
+            </div>
+            <Image src={img} alt={imgalt} height={400} className={styles.previewImg}/>
         </main>
       </>
     )

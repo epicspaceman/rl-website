@@ -5,11 +5,8 @@ export default function Nav() {
     return (
       <>
         <main className={styles.nav}>
-        <h2><Link href="/"  style={{ textDecoration: 'none' }}>Robert Lockay</Link></h2>
-            <div className={styles.navItems}>
-                <h2><Link href="/portfolio" style={{ textDecoration: 'none' }}>Portfolio</Link></h2>
-                <h2><Link href="/aboutme" style={{ textDecoration: 'none' }}>About Me</Link></h2>
-            </div>
+          <h2><Link href="/" className={styles.link}>Robert Lockay</Link></h2>
+          <h2><Link href="/aboutme" className={styles.link}>About Me</Link></h2>
         </main>
       </>
     )

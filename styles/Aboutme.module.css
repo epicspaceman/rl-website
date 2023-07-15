@@ -2,11 +2,19 @@
     width: 50%;
     margin: auto;
     font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    padding: 1px;
+    text-align: center;
 }
 
 .main {
     position: relative;
     margin: 0px;
+    font-family: 'Livvic', sans-serif;
+    color: rgb(15,31,56);
 }
 
 .content {
@@ -22,10 +30,14 @@
 .image {
     float: left;
     margin: 10px 20px 10px 0;
+    background-color: rgb(15,31,56);
+    padding: 25px;
 }
 
 .para {
     text-align: justify;
+    background-color: rgb(247,131,121);
+    padding: 30px;
 }
 
 .slider {

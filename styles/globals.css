@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+
 body, html {
     margin: 0;
+    background-color: rgb(27, 75, 90);
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(15,31,56);
+    border-radius: 15px;
 }

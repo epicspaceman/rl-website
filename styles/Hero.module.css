@@ -1,5 +1,5 @@
 .hero {
-    font-family: 'Cantata One', serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     height: 1200px;
@@ -10,27 +10,44 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-around;
-    width: 80vw;
+    width: 1800px;
+    height: 1000px;
     margin: auto;
+    align-items: center;
+    background-color: rgb(247,131,121);
 }
 
-.heroText{
+.heroImg {
+    background-color: rgb(27,75,90);
+    padding: 20px;
+}
+
+.heroText {
     text-align: left;
-    width: 800px;
+    width: 750px;
     height: 350px;
-    align-self: center;
+    color: rgb(15,31,56);
+    padding: 100px;
 }
 
 .heroText h1 {
-    font-size: 65px;
+    font-size: 85px;
+    margin: 0;
 }
 
-.heroText p {
-    font-size: 30px;
+.heroText h4{
+    font-size: 60px;
+    font-family: 'Livvic', 'sans-serif';
+    margin: 0;
 }
 
-.hero img {
-    width: 550px;
-    height: 700px;
+.heroText .bold{
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Poppins', 'sans-serif';
+    background-color: rgb(15,31,56);
+    color: rgb(247,131,121);
+    padding: 15px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
