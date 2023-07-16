@@ -45,7 +45,7 @@ export default function Home() {
           </section>
           <section className={styles.section}>
             <Reveal>
-                <Preview title="Personal Designs" caption="Posters and such designed in my free time." img={poster} imgalt="Poster for The Strokes' Machu Picchu" href="/aboutme"/>
+                <Preview title="Personal Designs" caption="Posters and such designed in my free time." img={poster} imgalt="Poster for The Strokes' Machu Picchu" href="/personaldesigns"/>
             </Reveal>
           </section>
         </div>

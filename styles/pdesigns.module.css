@@ -19,7 +19,7 @@
 .img {
     background-color: rgb(15,31,56);
     padding: 2rem;
-    max-width: 100%;
+    max-width: 75%;
     width: auto;
     height: auto;
 }
@@ -30,10 +30,21 @@
     padding: 2rem;
     font-family: 'Livvic', 'sans-serif';
     font-size: 1.2em;
+    min-width: 75%;
 }
 
 .section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-inline: 2rem;
+    margin: auto;
+}
+
+@media (max-width: 50em) {
+    .para {
+        font-size: .8em;
+        text-align: left;
+    }
 }
