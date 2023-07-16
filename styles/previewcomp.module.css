@@ -1,39 +1,99 @@
 .preview {
+    width: 100%;
+}
+
+.previewitems {
     margin: auto;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(247,131,121);
-    width: 1800px;
-    height: 800px;
+    padding-block: 5rem;
+    padding-inline: 5rem;
+    max-width: 80vw;
+}
+
+.previewText {
+    padding-inline: max(8rem, 2rem);
+    max-width: 40vw;
 }
 
 .previewHeader {
     font-family: 'Poppins', 'sans-serif';
     color: rgb(15,31,56);
-    font-size: 60px;
+    font-size: 4em;
     margin: 0;
 }
 
 .previewCaption {
     font-family: 'Livvic', 'sans-serif';
     color: rgb(15,31,56);
-    font-size: 30px;
+    font-size: 1.8em;
     margin: 0;
 }
 
 .previewImg {
     background-color: rgb(15,31,56);
-    padding: 30px;
+    padding: 2rem;
+    max-width: 15em;
+    height: auto;
+    width: auto\9;
 }
 
 .previewBtn {
     background-color: rgb(15,31,56);
     color: rgb(247,131,121);
     border: none;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: 'Poppins', 'sans-serif';
-    padding: 20px;
-    margin-top: 15px;
+    padding: 1em;
+    margin-top: 1rem;
+}
+
+.imgdiv {
+    padding-inline: max(8rem, 2rem);
+}
+
+@media (max-width: 50em) {
+    .previewitems {
+        padding-block: 5rem;
+        padding-inline: 5rem;
+        flex-direction: column;
+    }
+    
+    .previewText {
+        padding-inline: 2rem;
+        text-align: center;
+    }
+    
+    .previewHeader {
+        font-size: 3em;
+        margin: 0;
+    }
+    
+    .previewCaption {
+        font-family: 'Livvic', 'sans-serif';
+        color: rgb(15,31,56);
+        font-size: 1.8em;
+        margin: 0;
+    }
+    
+    .previewImg {
+        background-color: rgb(15,31,56);
+        padding: 2rem;
+        max-width: 15em;
+        height: auto;
+        width: auto\9;
+    }
+    
+    .previewBtn {
+        background-color: rgb(15,31,56);
+        color: rgb(247,131,121);
+        border: none;
+        font-size: 1.2em;
+        font-family: 'Poppins', 'sans-serif';
+        padding: 1em;
+        margin-top: 1rem;
+    }
 }

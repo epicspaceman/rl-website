@@ -7,7 +7,7 @@ export default function Hero() {
       <>
         <main className={styles.hero}>
             <div className={styles.heroItems}>
-                <Image src={Logo} alt="Logo" height={500} className={styles.heroImg}/>
+                <Image src={Logo} alt="Logo" className={styles.heroImg}/>
                 <div className={styles.heroText}>
                   <h1>Robert Lockay</h1>
                   <h4>I am a<span className={styles.bold}>Graphic Designer & Programmer</span></h4>

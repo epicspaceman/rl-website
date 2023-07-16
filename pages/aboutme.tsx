@@ -28,8 +28,8 @@ export default function About() {
               I am an aspiring designer/software or web developer. 
               Some hobbies of mine include gaming with friends, programming, and biking.
               </p>
-              <div className={styles.image}>
-                <Image src={Me} alt="picture of me" height={300} width={200} />
+              <div>
+                <Image src={Me} alt="picture of me" className={styles.image}/>
               </div>
               <p>
               As a student at Akins, I am a part of the New Tech Academy, where students learn about today&apos;s newest technology and how to use it. 

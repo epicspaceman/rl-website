@@ -9,16 +9,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.navItems {
-    width: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 30px;
-}
-
 .link {
     text-decoration: none;
     color: rgb(247,131,121);
-    font-size: 35px;
+    font-size: 1.5em;
+    background-color: rgb(15,31,56);
+    padding: .3em;
+}
+
+.right {
+    text-align: right;
+}
+
+@media (max-width: 50em) {
+    .link {
+        font-size: .8em;
+    }
 }

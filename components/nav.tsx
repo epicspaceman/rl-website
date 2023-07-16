@@ -6,7 +6,7 @@ export default function Nav() {
       <>
         <main className={styles.nav}>
           <h2><Link href="/" className={styles.link}>Robert Lockay</Link></h2>
-          <h2><Link href="/aboutme" className={styles.link}>About Me</Link></h2>
+          <h2 className={styles.right}><Link href="/aboutme" className={styles.link}>About Me</Link></h2>
         </main>
       </>
     )

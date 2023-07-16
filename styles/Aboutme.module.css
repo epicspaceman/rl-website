@@ -1,7 +1,7 @@
 .header {
-    width: 50%;
+    max-width: 90%;
     margin: auto;
-    font-size: 35px;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: rgb(247,131,121);
@@ -12,36 +12,46 @@
 
 .main {
     position: relative;
-    margin: 0px;
+    margin: 0;
     font-family: 'Livvic', sans-serif;
     color: rgb(15,31,56);
 }
 
 .content {
     padding-bottom: 7vh;
+    margin-top: 5rem;
 }
 
 .about {
-    width: 50%;
+    max-width: 90%;
     margin: auto;
-    font-size: 25px;
+    font-size: 1.8em;
 }
 
 .image {
     float: left;
-    margin: 10px 20px 10px 0;
+    margin: 1rem 1rem 1rem 0;
     background-color: rgb(15,31,56);
-    padding: 25px;
+    padding: 2rem;
+    max-width: 7em;
+    height: auto;
+    width: auto\9;
 }
 
 .para {
     text-align: justify;
     background-color: rgb(247,131,121);
-    padding: 30px;
+    padding: 2rem;
 }
 
 .slider {
     display: flex;
     justify-content: center;
     padding: 30px 0;
+}
+
+@media (max-width: 50em) {
+    .para {
+        text-align: left;
+    }
 }

@@ -8,7 +8,7 @@
 }
 
 .section {
-    height: 100vh;
+    padding-block: min(30vh, 15rem);
     display: flex;
     justify-content: center;
     align-items: center;
