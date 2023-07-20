@@ -38,11 +38,10 @@ export default function Home() {
             <Link href="/ybwork" className={styles.link2}>Akins Aerie</Link>
             <Link href="/personaldesigns" className={styles.link3}>Designs</Link>
             <div className={styles.link4}>Contact Me</div>
-            <button className={styles.back} onClick={e => {setClicked(false)}}>Back</button>
+            <button className={clicked? styles.back : styles.noback} onClick={e => {setClicked(false)}}>Back</button>
           </div>
           <Image src={Logo} alt="Logo" className={styles.img}/>
         </div>
-        <Footer />
       </main>
     </>
   )

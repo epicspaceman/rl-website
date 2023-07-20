@@ -10,8 +10,8 @@
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    justify-content: baseline;
     padding-bottom: 7vh;
     margin-top: 5rem;
 }
@@ -19,27 +19,56 @@
 .img {
     background-color: rgb(15,31,56);
     padding: 2rem;
-    max-width: 75%;
+    max-width: 25%;
     width: auto;
     height: auto;
 }
 
+.caption {
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.caption > a {
+    border-style: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: rgb(15,31,56);
+    transition: ease 2s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1.5em;
+}
+
+.icon {
+    font-size: clamp(5em, 50%, 15em);
+}
+
+.caption > a:hover {
+    transform: rotate(30deg);
+}
+
 .para {
-    text-align: justify;
+    text-align: left;
     background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+    font-family: 'Poppins', 'sans-serif';
     padding: 2rem;
-    font-family: 'Livvic', 'sans-serif';
-    font-size: 1.2em;
-    min-width: 75%;
+    font-size: clamp(1em, 2vw, 2em);
+    max-width: 20rem;
 }
 
 .section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-inline: 2rem;
     margin: auto;
+    max-width: 60%;
+    margin-block: 1rem;
 }
 
 @media (max-width: 50em) {
