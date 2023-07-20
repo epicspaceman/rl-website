@@ -1,17 +1,326 @@
 .main {
     position: relative;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
 }
 
 .content {
-    scroll-behavior: smooth;
+    min-height: 70.5rem;
 }
 
-.section {
-    padding-block: min(30vh, 10rem);
+.hamburger {
+    height: 5em;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+@keyframes expand {
+    from {
+        background-color: rgb(15,31,56);
+        height: .1em;
+        width: .2em;
+        transform: translateY(-7em);
+        z-index: 2;
+    }
+
+    50% {
+        transform: translateY(0em);
+        background-color: rgb(15,31,56);
+        height: 1em;
+        width: 3em;
+        z-index: 2;
+    }
+
+    to {
+        background-color: rgb(15,31,56);
+        width: 6em;
+        height: 1.5em;
+        padding-left: 5rem;
+        position: static;
+        z-index: 2;
+    }
+}
+
+.hlinks {
+    transform: rotate(-5deg);
+    min-height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
+    max-width:  fit-content;
+    margin-left: 3em;
+    position: absolute;
+}
+  
+  
+.hamline1, .hamline2, .hamline3, .hamline4 {
+    background-color: rgb(15,31,56);
+    height: 1em;
+    width: 3em;
+    z-index: 2;
+}
+
+.hamline1 {
+transform: rotate(7deg);
+}
+
+.hamline2 {
+transform: rotate(-5deg);
+}
+
+.hamline3 {
+transform: rotate(7deg);
+}
+
+.hamline4 {
+transform: rotate(-2deg);
+}
+
+.hlink1, .hlink2, .hlink3, .hlink4 {
+    animation-name: expand;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    font-size: 7.5em;
+    color: rgb(247,131,121);
+    z-index: 2;
+}
+
+.hlink1 {
+    transform: rotate(7deg);
+}
+
+.hlink2 {
+    transform: rotate(-5deg);
+}
+
+.hlink3 {
+    transform: rotate(7deg);
+}
+
+.hlink4 {
+    transform: rotate(-2deg);
+}
+
+.cover {
+    background-color: rgb(27,75,90);
+    height: 62em;
+    width: 60em;
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.heroText {
+    height: 50rem;
+    width: 70rem;
+}
 
+.heroText > h1 {
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    margin-left: 15rem;
+    font-size: 7em;
+    padding-inline: 2rem;
+}
+
+.heroText1 {
+    transform: rotate(5deg);
+    max-width: 35rem;
+}
+
+.heroText2 {
+    transform: rotate(-5deg);
+    max-width: 35rem;
+}
+
+.heroText3 {
+    transform: rotate(5deg);
+    max-width: 35rem;
+}
+
+@keyframes exit {
+    from {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-80rem);
+    }
+}
+
+.nocover {
+    animation-name: exit;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    background-color: rgb(27,75,90);
+    height: 62em;
+    width: 60em;
+    z-index: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.linksb {
+    transform: rotate(-5deg);
+    min-height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
+    max-width:  fit-content;
+    margin-left: 3em;
+    opacity: 0;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.links {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: step-end;
+    transform: rotate(-5deg);
+    min-height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
+    max-width:  fit-content;
+    margin-left: 3em;
+    opacity: 1;
+    z-index: 2;
+}
+
+.link1, .link2, .link3, .link4 {
+    animation-timing-function: linear;
+    font-size: 7.5em;
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    max-width: 7em;
+    padding-left: 5rem;
+    text-decoration: none;
+}
+
+.link1 {
+    transform: rotate(7deg);
+    transition: ease .5s;
+}
+
+.link1:hover {
+    transform: rotate(14deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link2 {
+    transform: rotate(-5deg);
+    transition: ease .5s;
+}
+
+.link2:hover {
+    transform: rotate(-10deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link3 {
+    transform: rotate(7deg);
+    transition: ease .5s;
+}
+
+.link3:hover {
+    transform: rotate(14deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link4 {
+    transform: rotate(-2deg);
+    transition: ease .5s;
+}
+
+.link4:hover {
+    transform: rotate(-4deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.back {
+    font-size: 4.5em;
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    max-width: 4em;
+    padding-inline: 3rem;
+    text-decoration: none;
+    transform: rotate(8deg);
+    transition: ease .5s;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back:hover {
+    transform: rotate(16deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+@keyframes dropIn {
+    from {
+        transform: translateY(-20em);
+    } 
+    to {
+        transform: translateY(0em);
+    }
+}
+
+
+.img {
+    max-width: 25%;
+    height: auto;
+    width: auto\9;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    transform: rotate(9deg);
+}
+
+.aboutIcon {
+    position: absolute;
+    font-size: 50em;
+    left: 150%;
+    color: rgb(247,131,121);
+    display: none;
+}
+
+.link1:hover + .aboutIcon {
+    display: block;
+    animation: dropIn;
+    animation-duration: .3s;
+}

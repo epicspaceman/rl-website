@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
     top: 0;
     height: 50px;
@@ -13,12 +13,22 @@
     text-decoration: none;
     color: rgb(247,131,121);
     font-size: 1.5em;
-    background-color: rgb(15,31,56);
-    padding: .3em;
 }
 
-.right {
-    text-align: right;
+.robert {
+    transform: rotate(-5deg);
+    background-color: rgb(15,31,56);
+    padding-inline: .5rem;
+    position: relative;
+    right: 1rem;
+}
+.lockay {
+    transform: rotate(5deg);
+    background-color: rgb(15,31,56);
+    padding-inline: .5rem;
+    position: relative;
+    left: 2rem;
+    bottom: .2rem;
 }
 
 @media (max-width: 50em) {

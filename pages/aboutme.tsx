@@ -6,7 +6,6 @@ import Footer from '@/components/footer'
 import Me from '@/public/me.jpg'
 import s2 from '@/public/newtechshirtback.png'
 import s1 from '@/public/newtechshirtfront.png'
-import {Reveal} from '@/components/reveal'
 
 export default function About() {
   return (
@@ -16,7 +15,6 @@ export default function About() {
       </Head>
       <main className={styles.main}>
         <Nav />
-        <Reveal>
         <div className={styles.content}>
           <div className={styles.header}>
             <h1>About Me</h1>
@@ -69,7 +67,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        </Reveal>
         <Footer />
       </main>
     </>

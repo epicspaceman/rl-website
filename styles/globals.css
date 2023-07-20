@@ -7,7 +7,7 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    background-color: rgb(27, 75, 90);
+    background-color: rgb(27,75,90);
 }
 
 ::-webkit-scrollbar {

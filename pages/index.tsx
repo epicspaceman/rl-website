@@ -1,29 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'
-import desimg1 from '@/public/desimg1.png';
-import desimg2 from '@/public/desimg2.png';
-import desimg5 from '@/public/desimg5.png';
-import c1 from '@/public/websiteprev1.png'
-import c2 from '@/public/bdeathgame.png'
-import c3 from '@/public/calcproj.png'
 import Logo from '@/public/LogoA.png'
-import Hero from '@/components/hero'
-import Preview from '@/components/preview'
-import {Reveal} from '@/components/reveal'
-import cover from '@/public/ycover.png'
-import poster from '@/public/machupicchuposter.jpg'
-
-
-
-const inter = Inter({ subsets: ['latin'] })
-
+import {useEffect, useState} from 'react'
+import Link from 'next/link'
 
 
 export default function Home() {
+  const [clicked, setClicked] = useState(false);
 
   return (
     <>
@@ -33,21 +19,28 @@ export default function Home() {
       <main className={styles.main}>
         <Nav />
         <div className={styles.content}>
-          <section className={styles.section}>
-            <Reveal>
-              <Hero />
-            </Reveal>
-          </section>
-          <section className={styles.section}>
-            <Reveal>
-                <Preview title="Akins Aerie 2023" caption="My design work on Akins' 2023 Yearbook rendition." img={cover} imgalt="Akins 2023 Yearbook Cover" href="/ybwork"/>
-            </Reveal>
-          </section>
-          <section className={styles.section}>
-            <Reveal>
-                <Preview title="Personal Designs" caption="Posters and such designed in my free time." img={poster} imgalt="Poster for The Strokes' Machu Picchu" href="/personaldesigns"/>
-            </Reveal>
-          </section>
+          <div className={clicked? styles.hlinks : styles.hamburger} id="ham" onClick={e => {setClicked(true)}}>
+            <div className={clicked? styles.hlink1 : styles.hamline1}></div>
+            <div className={clicked? styles.hlink2 : styles.hamline2}></div>
+            <div className={clicked? styles.hlink3 : styles.hamline3}></div>
+            <div className={clicked? styles.hlink4 : styles.hamline4}></div>
+          </div>
+          <div className={clicked? styles.nocover : styles.cover}>
+            <div className={styles.heroText}>
+              <h1 className={styles.heroText1}>Graphic Designer<span>.</span></h1>
+              <h1 className={styles.heroText2}>Programmer<span>.</span></h1>
+              <h1 className={styles.heroText3}>Student<span>.</span></h1>
+            </div>
+          </div>
+          <div className={clicked? styles.links : styles.linksb}>
+            <Link href="/aboutme" className={styles.link1}>About</Link>
+            <div className={styles.aboutIcon}>?</div>
+            <Link href="/ybwork" className={styles.link2}>Akins Aerie</Link>
+            <Link href="/personaldesigns" className={styles.link3}>Designs</Link>
+            <div className={styles.link4}>Contact Me</div>
+            <button className={styles.back} onClick={e => {setClicked(false)}}>Back</button>
+          </div>
+          <Image src={Logo} alt="Logo" className={styles.img}/>
         </div>
         <Footer />
       </main>
