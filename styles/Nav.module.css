@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     position: sticky;
     top: 0;
     height: 50px;
@@ -14,6 +13,13 @@
     text-decoration: none;
     color: rgb(247,131,121);
     font-size: 1.5em;
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
 }
 
 .robert {
@@ -37,3 +43,256 @@
         font-size: .8em;
     }
 }
+
+.hamburger {
+    height: 5em;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+@keyframes expand {
+    from {
+        background-color: rgb(15,31,56);
+        height: .1em;
+        width: .2em;
+        transform: translateY(-7em);
+        z-index: 2;
+
+        
+    }
+
+    50% {
+        transform: translateY(0em);
+        background-color: rgb(15,31,56);
+        height: 1em;
+        height: clamp(.5em, 5vh, 1em);
+        z-index: 2;
+    }
+
+    to {
+        background-color: rgb(15,31,56);
+        width: clamp(1em, 35vw, 7em);
+        height: clamp(1em, 15vh, 2em);
+        padding-left: 5rem;
+        position: static;
+        z-index: 2;
+        font-size: clamp(1em, 7vw, 7.5em);
+    }
+}
+
+.hlinks {
+    transform: rotate(-5deg);
+    min-height: clamp(10em, 80%, 40em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
+    max-width:  fit-content;
+    margin-left: 3em;
+    position: absolute;
+    margin-top: clamp(10rem, 30%, 10rem);
+}
+  
+  
+.hamline1, .hamline2, .hamline3, .hamline4 {
+    background-color: rgb(15,31,56);
+    height: 1em;
+    width: 3em;
+    z-index: 2;
+}
+
+.hamline1 {
+transform: rotate(7deg);
+}
+
+.hamline2 {
+transform: rotate(-5deg);
+}
+
+.hamline3 {
+transform: rotate(7deg);
+}
+
+.hamline4 {
+transform: rotate(-2deg);
+}
+
+.hlink1, .hlink2, .hlink3, .hlink4 {
+    animation-name: expand;
+    animation-duration: 2s;
+    animation-timing-function: step(3, end);
+    font-size: 7.5em;
+    color: rgb(247,131,121);
+    z-index: 2;
+}
+
+.hlink1 {
+    transform: rotate(7deg);
+}
+
+.hlink2 {
+    transform: rotate(-5deg);
+}
+
+.hlink3 {
+    transform: rotate(7deg);
+}
+
+.hlink4 {
+    transform: rotate(-2deg);
+}
+
+@keyframes slam {
+    from {
+        opacity: 0;
+        transform: scale(5);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes exit {
+    from {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-80rem);
+    }
+}
+
+
+.linksb {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.links {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: step-end;
+    transform: rotate(-5deg);
+    min-height: clamp(10em, 80%, 40em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
+    max-width:  fit-content;
+    margin-left: 3em;
+    opacity: 1;
+    z-index: 2;
+    margin-top: clamp(5rem, 50%, 30rem);
+}
+
+.link1, .link2, .link3, .link4 {
+    font-size: clamp(1em, 7vw, 7.5em);
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    max-width: clamp(1em, 95%, 7em);
+    padding-left: clamp(2rem, 5vw, 5rem);
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.link1 {
+    transform: rotate(7deg);
+    transition: ease .5s;
+}
+
+.link1:hover {
+    transform: rotate(14deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link2 {
+    transform: rotate(-5deg);
+    transition: ease .5s;
+}
+
+.link2:hover {
+    transform: rotate(-10deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link3 {
+    transform: rotate(7deg);
+    transition: ease .5s;
+}
+
+.link3:hover {
+    transform: rotate(14deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.link4 {
+    transform: rotate(-2deg);
+    transition: ease .5s;
+}
+
+.link4:hover {
+    transform: rotate(-4deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+
+.back {
+    font-size: clamp(.5em, 4vw, 6.5em);
+    color: rgb(247,131,121);
+    background-color: rgb(15,31,56);
+    max-width: clamp(.55em, 95%, 4em);
+    padding-inline: clamp(1rem, 3vw, 3rem);
+    text-decoration: none;
+    transform: rotate(8deg);
+    transition: ease .5s;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    animation-name: exit;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: reverse;
+    animation-delay: 1.5s;
+}
+
+.back:hover {
+    transform: rotate(16deg);
+    background-color: rgb(247,131,121);
+    color: rgb(15,31,56);
+}
+

@@ -5,110 +5,28 @@
     height: 100%;
 }
 
-.hamburger {
-    height: 5em;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.content {
+    background-image: url("../public/Artboard\ 1.jpg");
+    background-size: cover;
+    min-height: 92vh;
+    max-width: 95%;
+    margin: auto;
+    position: relative;
+    background-position: center;
+}
+
+.content::before {
+    content: "";
+    display: block;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(15,31,56, .5);
+    box-shadow: 1px 1px 20px #555 inset;
 }
 
-@keyframes expand {
-    from {
-        background-color: rgb(15,31,56);
-        height: .1em;
-        width: .2em;
-        transform: translateY(-7em);
-        z-index: 2;
-
-        
-    }
-
-    50% {
-        transform: translateY(0em);
-        background-color: rgb(15,31,56);
-        height: 1em;
-        width: 3em;
-        z-index: 2;
-    }
-
-    to {
-        background-color: rgb(15,31,56);
-        width: clamp(1em, 35vw, 7em);
-        height: clamp(1em, 15vh, 2em);
-        padding-left: 5rem;
-        position: static;
-        z-index: 2;
-
-
-    }
-}
-
-.hlinks {
-    transform: rotate(-5deg);
-    min-height: clamp(10em, 80%, 40em);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    justify-content: space-around;
-    max-width:  fit-content;
-    margin-left: 3em;
-    position: absolute;
-}
-  
-  
-.hamline1, .hamline2, .hamline3, .hamline4 {
-    background-color: rgb(15,31,56);
-    height: 1em;
-    width: 3em;
-    z-index: 2;
-}
-
-.hamline1 {
-transform: rotate(7deg);
-}
-
-.hamline2 {
-transform: rotate(-5deg);
-}
-
-.hamline3 {
-transform: rotate(7deg);
-}
-
-.hamline4 {
-transform: rotate(-2deg);
-}
-
-.hlink1, .hlink2, .hlink3, .hlink4 {
-    animation-name: expand;
-    animation-duration: 2s;
-    animation-timing-function: step(3, end);
-    font-size: 7.5em;
-    color: rgb(247,131,121);
-    z-index: 2;
-}
-
-.hlink1 {
-    transform: rotate(7deg);
-}
-
-.hlink2 {
-    transform: rotate(-5deg);
-}
-
-.hlink3 {
-    transform: rotate(7deg);
-}
-
-.hlink4 {
-    transform: rotate(-2deg);
-}
 
 @keyframes slam {
     from {
@@ -200,154 +118,24 @@ transform: rotate(-2deg);
     transform: scale(.5);
 }
 
-.linksb {
-    transform: rotate(-5deg);
-    min-height: clamp(10em, 80%, 40em);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    justify-content: space-around;
-    max-width:  fit-content;
-    margin-left: 3em;
-    opacity: 0;
-    z-index: -1;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.links {
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-timing-function: step-end;
-    transform: rotate(-5deg);
-    min-height: clamp(10em, 80%, 40em);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    justify-content: space-around;
-    max-width:  fit-content;
-    margin-left: 3em;
-    opacity: 1;
-    z-index: 2;
-}
-
-.link1, .link2, .link3, .link4 {
-    font-size: clamp(1em, 7vw, 7.5em);
-    color: rgb(247,131,121);
-    background-color: rgb(15,31,56);
-    max-width: clamp(1em, 90%, 7em);
-    padding-left: 5rem;
-    text-decoration: none;
-    transition: all 1s ease;
-}
-
-.link1 {
-    transform: rotate(7deg);
-    transition: ease .5s;
-}
-
-.link1:hover {
-    transform: rotate(14deg);
-    background-color: rgb(247,131,121);
-    color: rgb(15,31,56);
-}
-
-.link2 {
-    transform: rotate(-5deg);
-    transition: ease .5s;
-}
-
-.link2:hover {
-    transform: rotate(-10deg);
-    background-color: rgb(247,131,121);
-    color: rgb(15,31,56);
-}
-
-.link3 {
-    transform: rotate(7deg);
-    transition: ease .5s;
-}
-
-.link3:hover {
-    transform: rotate(14deg);
-    background-color: rgb(247,131,121);
-    color: rgb(15,31,56);
-}
-
-.link4 {
-    transform: rotate(-2deg);
-    transition: ease .5s;
-}
-
-.link4:hover {
-    transform: rotate(-4deg);
-    background-color: rgb(247,131,121);
-    color: rgb(15,31,56);
-}
-
-.back {
-    font-size: 4.5em;
-    color: rgb(247,131,121);
-    background-color: rgb(15,31,56);
-    max-width: 4em;
-    padding-inline: 3rem;
-    text-decoration: none;
-    transform: rotate(8deg);
-    transition: ease .5s;
-    border-style: none;
-    font-family: 'Poppins', sans-serif;
-    animation-name: exit;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-direction: reverse;
-    animation-delay: 1.5s;
-}
-
-.back:hover {
-    transform: rotate(16deg);
-    background-color: rgb(247,131,121);
-    color: rgb(15,31,56);
-}
-
-@keyframes dropIn {
-    from {
-        transform: translateY(-20em);
-    } 
-    to {
-        transform: translateY(0em);
-    }
-}
-
 
 .img {
     max-width: 25%;
     height: auto;
     width: auto\9;
-    position: absolute;
-    top: 25%;
-    left: 60%;
+    margin-top: 15%;
+    margin-left: 60%;
     transform: rotate(9deg);
 }
 
-.aboutIcon {
-    position: absolute;
-    font-size: 50em;
-    left: 150%;
-    color: rgb(247,131,121);
-    display: none;
-}
 
-.link1:hover + .aboutIcon {
-    display: block;
-    animation: dropIn;
-    animation-duration: .3s;
+@media (max-width: 40em) {
+    .img {
+        max-width: 35%;
+        height: auto;
+        width: auto\9;
+        margin-top: 100%;
+        margin-left: 30%;
+        transform: rotate(9deg);
+    }
 }

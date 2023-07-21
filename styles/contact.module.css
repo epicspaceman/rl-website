@@ -1,0 +1,25 @@
+.main {
+    position: relative;
+    margin: 0px;
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+}
+
+.content > a {
+    color: var(--deep-blue);
+}
+
+.text {
+    font-family: var(--headline-font);
+    color: var(--deep-blue);
+    background-color: var(--coral-pink);
+    max-width: 50%;
+    text-align: center;
+    font-size: clamp(3em, 5vw, 7em);
+    padding: 2rem;
+    margin: auto;
+    margin-top: 20rem;
+}

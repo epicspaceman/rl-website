@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
 
+:root {
+    --headline-font: 'Poppins', sans-serif;
+    --body-copy: 'Livvic', sans-serif;
+    --blue: rgb(27,75,90);
+    --deep-blue: rgb(15,31,56);
+    --coral-pink: rgb(247,131,121);
+}
+
 body, html {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    background-color: rgb(27,75,90);
+    background-color: var(--blue);
 }
 
 ::-webkit-scrollbar {
